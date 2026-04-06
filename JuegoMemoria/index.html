@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Juego de Memoria</title>
+</head>
+<body>
+    <form id="formularioInicial">
+        <div class="containerCantidad">
+            <h2 class="titulo">Ingresa cantidad de numeros</h2>
+            <input type="number" id="cantidad" placeholder="Ingresa Numero" required>
+        </div>
+
+        <div class="containerIntervalo">
+            <h2 class="titulo">Ingresa intervalo de tiempo</h2>
+            <input type="number" id="intervalo" placeholder="Ingresa tiempo" required>
+        </div><br>
+
+        <input type="checkbox" id="permitirNegativo"> Permitir numero negativo
+        <h2 id="error"></h2>
+        
+        <button type="button" class="botonConfirmar" onclick="comienzoJuego()">Comerzar</button>
+    </form>
+
+    <div id="containerNumeros" style="display: none;">
+        <h1 id="muestraPantalla"></h1>
+        <input type="number" id="resultado" placeholder="ingresa respuesta">
+        <button type="button" class="botonEnvio" onclick="validarResultado()">verificar</button>    
+    
+        <h2 id="textoMensaje"></h2>
+        <button type="button" id="botonVolver" onclick="volver()" style="display: none;">volver a intentar</button>
+    </div><br>
+
+    <h1 id="puntaje"></h1>
+
+
+</body>
+    <script src="js/script.js"></script>
+</html>

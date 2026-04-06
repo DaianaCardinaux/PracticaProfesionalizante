@@ -1,0 +1,123 @@
+body {
+    background-color: #161b2e;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    height: 700px;           
+}
+
+#formularioInicial, #containerNumeros {
+    text-align: center;
+    background: #7d87b1;
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.titulo {
+    color: #1f243a;
+    text-transform: uppercase;
+}
+
+.titulo, #error, #textoMensaje, #puntaje{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px; 
+}   
+
+#intervalo, #cantidad, #resultado {
+    text-align: center;
+    border-radius: 20px;
+    border-style: none;
+    height: 30px;
+    width: 150px;
+    box-shadow: 2px 2px 5px rgba(25, 24, 52, 0.3);
+}
+
+#permitirNegativo {
+    zoom: 1.5;   
+    margin-right: 10px;   
+    margin-top: 10px;
+}
+
+#error {
+    font-size: 25px;
+    color: rgb(164, 30, 30);
+}
+
+.botonConfirmar, .botonEnvio, #botonVolver {
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #2a2f43;
+    color: white;
+    border-style: none;
+    letter-spacing: 1px;
+}
+
+.botonEnvio {
+    height: 30px;
+    background-color: #3d4773;
+}
+
+#botonVolver {
+    width: 150px;
+    background-color: rgb(72, 83, 105);
+}
+
+.botonConfirmar:hover, .botonEnvio:hover, #botonVolver:hover {
+    background-color: #181a24;
+    transition: 0.5s;
+}
+
+#containerNumeros {
+    height: 230px;
+}
+
+.numeroEstilo {
+    font-size: 60px;
+    color:#181a24;
+}
+
+#containerNumeros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 40px;
+    text-align: center;
+}
+
+#containerNumeros input,
+#containerNumeros button {
+    margin-top: 10px;
+}
+
+.tituloComienzo {
+    font-size: 40px;
+    color: #41ac26;
+    text-shadow: 0px 0px 9px #0a4a0d;
+}
+
+.correcto { 
+    color: #14612a; 
+}
+
+.incorrecto { 
+    color: #931810; 
+}
+
+.vacio {
+    color: #8f4b07;
+}
+
+#puntaje {
+    color: white;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: auto;
+    text-align: center;
+}
