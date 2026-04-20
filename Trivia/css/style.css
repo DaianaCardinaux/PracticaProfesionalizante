@@ -2,63 +2,69 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fefbea;
+    display: flex;
+    justify-content: center;
 }
 
 #containerInicial {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
 .logo {
-    width: 40%;
-    margin-bottom: -70px;
-    display: block;
+    width: 60%;
+    margin-bottom: -50px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
 }
 
 .divCategoria, .divNivel {
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px 40px;
+    text-align: center;
 }
 
 div label {
-    font-size: 30px;
+    font-size: 28px;
     font-family: monospace;
     color: #19253e;
 }
 
 .textoRadio {
-    font-size: 22px;
+    font-size: 20px;
     color: #0c2b5c;
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
 
 .radio {
     margin: 10px;
-    width: 15px;
-    height: 15px;
-    border-color: #070e1b;
+    transform: scale(1.2);
 }
 
 #mensajeError {
     color: rgb(130, 8, 8);
-    font-size: 30px;
-    margin-top: 10px;
+    font-size: 24px;
+    margin-top: 15px;
 }
 
 #containerInicial button {
-    padding: 15px;
-    width: 200px;
-    font-size: 25px;
+    padding: 12px;
+    width: 180px;
+    font-size: 22px;
     text-transform: uppercase;
     font-family: fantasy;
     color: #fefbea;
     background-color: #1d4483;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 2px 2px 7px rgba(27, 13, 73, 0.6);
-    margin-top: 30px;
+    margin-top: 25px;
+    cursor: pointer;
 }
 
 #containerInicial button:hover {
@@ -72,36 +78,35 @@ div label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    text-align: center;
 }
 
 .contadorPregunta {
-    font-size: 25px;
+    font-size: 22px;
     color: #3a4150;
     font-family: monospace;
 }
 
 .preguntaTexto {
-    font-size: 30px;
+    font-size: 28px;
     color:#19253e;
-    text-align: center;
     margin: 20px 0;
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
 
 .contador {
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(100, 17, 17);
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 #contenedorPregunta button {
-    display: block;
-    width: 300px;
-    margin: 8px 0;
-    padding: 12px;
-    font-size: 18px;
+    width: 280px;
+    margin: 6px 0;
+    padding: 10px;
+    font-size: 17px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -119,19 +124,19 @@ div label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
 }
 
 #contenedorFinal h1 {
-    font-size: 40px;
+    font-size: 36px;
     font-family: monospace;
     color: #19253e;
 }
 
 #contenedorFinal h3 {
-    font-size: 28px;
-    margin: 10px;
+    font-size: 24px;
+    margin: 8px;
     font-family: monospace;
 }
 

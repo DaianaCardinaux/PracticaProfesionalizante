@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background-image: url('https://plus.unsplash.com/premium_photo-1756717236478-bc8ec6599418?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8');
+    background-repeat: no-repeat;  
+    background-size: cover;        
+}
+
+.tablero{
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.carta{
+    width: 65px;
+    height: 65px;
+    background-image: url('/JuegoEmojis/ficha.png');
+
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px #00000061;
+    border-radius: 10px;
+    border: 2px solid #423b0580;
+}
+
+.mostrar{
+    background-color: rgb(225, 225, 225);
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="ingresoNumero">
+        <label class="valorDolar">Ingresa valor</label>
+        <input type="text" id="ingresoValor">
+
+        <button type="submit" onclick="convertirValor()">convertir</button>
+    </div>
+
+<table id="tablaVision">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Compra</th>
+            <th>Venta</th>
+            <th>USD (Compra)</th>
+            <th>USD (Venta)</th>
+        </tr>
+    </thead>
+    <tbody id="cuerpoTabla"></tbody>
+</table>
+
+
+
+</body>
+    <script src="./js/script.js"></script>
+</html>
