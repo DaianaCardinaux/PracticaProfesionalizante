@@ -1,0 +1,60 @@
+1- cuantos alumnos tiene cada materia:
+
+resultado: 
+
+materia | cantidad
+
+SELECT materias.Nombre, materias.ID_Materia, count(*) 
+FROM materias 
+INNER JOIN alumnos ON alumnos.ID_Carrera = materias.ID_Carrera 
+GROUP BY materias.ID_Materia, materias.Nombre;
+
+2- cuantos alumnos tiene cada carrera
+
+SELECT carreras.Nombre, carreras.id_carrera, count(*) 
+FROM carreras 
+INNER JOIN alumnos ON alumnos.ID_Carrera = carreras.ID_Carrera 
+GROUP BY carreras.ID_Carrera, carreras.Nombre;
+
+3- que modificacion o que agregado debemos realizar en la bdd para para poder guardar
+las notas (de cada alumno y de cada materia)
+
+CREATE TABLE Notas (
+    ID_Nota INT PRIMARY KEY AUTO_INCREMENT,
+    ID_Alumno INT,
+    ID_Materia INT,
+    Nota INT CHECK (Nota BETWEEN 1 AND 10),
+
+    FOREIGN KEY (ID_Alumno) REFERENCES Alumnos(ID_Alumno),
+    FOREIGN KEY (ID_Materia) REFERENCES Materias(ID_Materia)
+);
+
+4- trayectoria de alumnos 
+
+
+alumnos agregar fecha_nacimiento
+ALTER TABLE alumnos
+ADD fecha_nacimiento DATE;
+
+materias agregar nota_aprobacion
+ALTER TABLE materias
+ADD nota_aprobacion INT CHECK (nota_aprobacion BETWEEN 1 AND 10);
+
+juan perez 33, 
+materia / curso / nota / fecha.
+
+ordenar por curso de menor a mayor.
+
+SELECT Alumnos.Nombre, TIMESTAMPDIFF(YEAR, Alumnos.fecha_nacimiento, CURDATE()), Materias.Nombre, Materias.Curso, Notas.Nota, Notas.fecha FROM Alumnos
+JOIN Notas ON Alumnos.ID_Alumno = Notas.ID_Alumno
+JOIN Materias ON Materias.ID_Materia = Notas.ID_Materia
+WHERE Alumnos.ID_Alumno = 1
+ORDER BY Materias.Curso;
+
+
+
+
+
+
+
+
